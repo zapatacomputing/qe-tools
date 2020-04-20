@@ -28,5 +28,9 @@ RUN pip3 install --upgrade pip
 # Make sure to upgraade setuptools else OpenPack won't be installed because it uses find_namespace_packages
 RUN pip3 install --upgrade setuptools
 
+# Add useful common python libraries
+RUN pip3 install numpy==1.18.1
+RUN pip3 install pandas==1.0.1
+
 ENTRYPOINT bash
 
